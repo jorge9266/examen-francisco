@@ -1,0 +1,68 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#map {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+}
+
+aside {
+  width: 20%;
+  height: 100%;
+  min-width: 300px;
+  overflow-y: auto;
+  float: left;
+}
+aside #cabecera {
+  display: flex;
+  justify-content: center;
+  background-color: yellow;
+  color: blue;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+aside #datos {
+  display: flex;
+  flex-direction: column;
+}
+aside #datos ul {
+  list-style: none;
+  padding: 15px;
+  background-color: blue;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+aside #datos ul:hover {
+  background-color: yellow;
+}
+aside #datos ul:hover li {
+  color: blue;
+}
+aside #datos ul:hover button {
+  visibility: visible;
+}
+aside #datos ul li {
+  padding: 5px;
+  color: yellow;
+}
+aside #datos ul button {
+  border-radius: 10px;
+  visibility: hidden;
+}
+aside #datos hr {
+  width: 100%;
+  margin: 0;
+  color: yellow;
+}/*# sourceMappingURL=style.css.map */

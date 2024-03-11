@@ -1,0 +1,84 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+html, body {
+    height: 100%; 
+    width: 100%; 
+}
+
+#map {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0; 
+    width: 80%;
+
+}
+
+aside {
+    width: 20%; 
+    height: 100%; 
+    min-width: 300px;
+    overflow-y: auto;
+    float: left;
+    
+    #cabecera {
+        display: flex;
+        justify-content: center; 
+        background-color: yellow;
+        color: blue;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      
+    }
+
+    #datos {
+        display: flex;
+        flex-direction: column;
+        
+        ul{
+            list-style: none;
+            padding: 15px;
+            background-color: blue;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+
+            &:hover{
+                background-color: yellow;
+
+
+
+                li{
+                    color: blue;
+                }
+
+                button{
+                    visibility: visible;
+                }
+            }
+
+            li{
+                padding: 5px;
+                color: yellow;                
+            }
+
+            button{
+                border-radius: 10px;
+                visibility: hidden;
+            }
+        }
+        hr{
+            width: 100%;
+            margin: 0;
+            color: yellow;
+        }
+    }
+     
+}
+
+
+
